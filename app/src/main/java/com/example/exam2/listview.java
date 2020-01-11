@@ -2,6 +2,7 @@ package com.example.exam2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -77,7 +78,9 @@ private Button add,remove,clear;
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 String item= (String) listView.getItemAtPosition( position );
 
-                Toast.makeText( listview.this, item, Toast.LENGTH_SHORT ).show();
+                Intent intent=new Intent( listview.this,template.class );
+                intent.putExtra( "item",item );
+                startActivity( intent );
             }
         } );
 
