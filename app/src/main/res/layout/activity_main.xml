@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Animation.AppCompat.Tooltip"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/exercise3"
+        android:layout_width="135dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/colorPrimary"
+        android:text="Exercise4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exercise5"
+        android:layout_width="120dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/colorPrimary"
+        android:text="Exercise 5"
+        app:layout_constraintStart_toEndOf="@+id/exercise3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/exercise6"
+        android:layout_width="130dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorPrimary"
+        android:text="exercise6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise3" />
+
+    <Button
+        android:id="@+id/exercise7"
+        android:layout_width="124dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/colorPrimary"
+        android:text="exercise7"
+        app:layout_constraintStart_toEndOf="@+id/exercise6"
+        app:layout_constraintTop_toBottomOf="@+id/exercise5" />
+
+    <Button
+        android:id="@+id/testb"
+        android:layout_width="126dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="215dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        android:bufferType="normal"
+        android:capitalize="characters"
+        android:clickable="false"
+        android:text="test_B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
