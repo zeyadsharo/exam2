@@ -40,6 +40,7 @@ public class exercise7 extends AppCompatActivity {
         seekBar.setProgress( 10 );
         textView.setTextSize( 10 );
         r1.setChecked( true );
+
         bundle=getIntent().getExtras();
 
         returnIntent = new Intent();
