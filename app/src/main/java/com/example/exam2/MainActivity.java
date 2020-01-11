@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-   Button exercise3,exercise5 ,exercise6,exercise7,testb,intenta;
+   Button exercise3,exercise5 ,exercise6,exercise7,testb,intenta,listview;
    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         exercise7=findViewById( R.id.exercise7 );
         intenta=findViewById( R.id.intenta );
         testb=findViewById( R.id.testb );
+        listview=findViewById( R.id.listview );
 
         exercise3.setOnClickListener( new View.OnClickListener() {
             @Override
@@ -63,6 +64,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 intent=new Intent(MainActivity.this,intentactivity.class);
+                startActivity( intent );
+            }
+        } );
+        listview.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent=new Intent(MainActivity.this,listview.class);
                 startActivity( intent );
             }
         } );
