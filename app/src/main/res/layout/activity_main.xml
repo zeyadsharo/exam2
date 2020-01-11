@@ -59,14 +59,26 @@
         android:id="@+id/testb"
         android:layout_width="126dp"
         android:layout_height="35dp"
-        android:layout_marginStart="215dp"
-        android:layout_marginLeft="215dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
         android:layout_marginTop="32dp"
         android:background="@color/colorPrimary"
         android:bufferType="normal"
         android:capitalize="characters"
         android:clickable="false"
         android:text="test_B"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/intenta"
         app:layout_constraintTop_toBottomOf="@+id/exercise7" />
+
+    <Button
+        android:id="@+id/intenta"
+        android:layout_width="134dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/colorPrimary"
+        android:text="intent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exercise6" />
 </androidx.constraintlayout.widget.ConstraintLayout>
