@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-   Button exercise3,exercise5 ,exercise6,exercise7,testb,intenta,listview;
+   Button exercise3,exercise5 ,exercise6,exercise7,testb,intenta,listview,listview2,list3,autocomplate;
    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,10 +20,12 @@ public class MainActivity extends AppCompatActivity {
         exercise5=findViewById( R.id.exercise5 );
         exercise6=findViewById( R.id.exercise6 );
         exercise7=findViewById( R.id.exercise7 );
+        autocomplate=findViewById( R.id.autocomplate );
+        list3=findViewById( R.id.list3 );
         intenta=findViewById( R.id.intenta );
         testb=findViewById( R.id.testb );
         listview=findViewById( R.id.listview );
-
+        listview2=findViewById( R.id.listview2 );
         exercise3.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,6 +76,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity( intent );
             }
         } );
+        listview2.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent=new Intent(MainActivity.this,listviewp2.class);
+                startActivity( intent );
+            }
+        } );
+        list3.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent=new Intent(MainActivity.this,A.class);
+                startActivity( intent );
+            }
+        } );
+        autocomplate.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                intent=new Intent(MainActivity.this,autocomplete.class);
+                startActivity( intent );
+            }
+        } );
+
+
     }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {

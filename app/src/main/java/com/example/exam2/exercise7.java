@@ -74,7 +74,7 @@ public class exercise7 extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener( new SeekBar.OnSeekBarChangeListener() {
              @Override
              public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                    textView.setTextSize( progress );
+                 textView.setTextSize( seekBar.getProgress() );
              }
 
              @Override

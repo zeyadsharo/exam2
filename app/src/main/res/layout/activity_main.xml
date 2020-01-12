@@ -93,4 +93,40 @@
         android:text="listview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/intenta" />
+
+    <Button
+        android:id="@+id/listview2"
+        android:layout_width="120dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="19dp"
+        android:background="@color/colorPrimary"
+        android:text="listview2"
+        app:layout_constraintStart_toEndOf="@+id/listview"
+        app:layout_constraintTop_toBottomOf="@+id/testb" />
+
+    <Button
+        android:id="@+id/list3"
+        android:layout_width="134dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:text="list3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listview" />
+
+    <Button
+        android:id="@+id/autocomplate"
+        android:layout_width="122dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="autocom"
+        app:layout_constraintStart_toEndOf="@+id/list3"
+        app:layout_constraintTop_toBottomOf="@+id/listview2" />
 </androidx.constraintlayout.widget.ConstraintLayout>

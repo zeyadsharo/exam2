@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".template"></activity>
+        <activity android:name=".autocomplete"></activity>
+        <activity android:name=".B" />
+        <activity android:name=".A" />
+        <activity android:name=".row" />
+        <activity android:name=".listviewp2" />
+        <activity android:name=".template" />
         <activity android:name=".listview" />
         <activity android:name=".intentactivity" />
         <activity android:name=".testb" />
